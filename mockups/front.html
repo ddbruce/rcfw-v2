@@ -4,59 +4,109 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800,800i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,800,800i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Rensco Fire Wire - front page</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Rensco Fire Wire</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Dispatches<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Behind the Scenes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Archived Dispatches</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Get in Touch</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rensco Fire Wire</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Dispatches<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Behind the Scenes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Archived Dispatches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <br><br>
-        <h1>Dispatches</h1>
+      <div class="col-md-8">
+        <h1 id="page-title">Dispatches</h1>
+      </div>
+      <div class="col-md-4" id="searchdiv">
+        Search by department:
+        <select class="selectpicker" data-live-search="true" title="Select a department..." id="searchdept">
+          <option>Brunwick Fire Co. No. 1</option>
+          <optgroup label="Rensselaer Fire Dept.">
+            <option title="Rensselaer Fire Department Fire Alert">Fire Alert</option>
+            <option title="Rensselaer Fire Department EMS Alert">EMS Alert</option>
+          </optgroup>
+          <option>Rensselaer Volunteer Ambulance</option>
+          <option>RPI Ambulance</option>
+          <option>Sand Lake Ambulance</option>
+          <optgroup label="Troy Fire Dept.">
+            <option title="Troy Fire Department Station 1">Station 1</option>
+            <option title="Troy Fire Department Station 2">Station 2</option>
+            <option title="Troy Fire Department Station 3">Station 3</option>
+            <option title="Troy Fire Department Station 4">Station 4</option>
+            <option title="Troy Fire Department Station 5">Station 5</option>
+            <option title="Troy Fire Department Station 6">Station 6</option>
+            <option title="Troy Fire Department All-call">All-call</option>
+          </optgroup>
+          <option>Tsatsawassa Protective Fire Co.</option>
+          <option>West Sand Lake Fire Dept.</option>
+        </select>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8">
-        <h4>Troy Fire Department Station 2 tones received at 15:02</h4>
-        <h6>6 April 18</h6>
-        <audio controls>
-          <source src="https://storage.cloud.google.com/rensco-fire-wire/10080.mp3" type="audio/mp3">
-        </audio>
+      <div class="col-md-9">
+        <div class="dispatch bg-light">
+          <h4 class="dispatch-info">Troy Fire Department Station 2 tones received at 15:02</h4>
+          <h6 class="dispatch-date">6 April 18</h6>
+          <audio controls class="dispatch-audio">
+            <source src="https://storage.cloud.google.com/rensco-fire-wire/10080.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h4>RPI Ambulance tones received at 12:43</h4>
-        <h6>6 April 18</h6>
-        <audio controls>
-          <source src="https://storage.cloud.google.com/rensco-fire-wire/10081.mp3" type="audio/mp3">
-        </audio>
+      <div class="col-md-9">
+        <div class="dispatch bg-light">
+          <h4 class="dispatch-info">Melrose Fire Department tones received at 14:59</h4>
+          <h6 class="dispatch-date">6 April 18</h6>
+          <audio controls class="dispatch-audio">
+            <source src="https://storage.cloud.google.com/rensco-fire-wire/10080.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="dispatch bg-light">
+          <h4 class="dispatch-info">Brunswick Fire Co. No. 1 tones received at 10:34</h4>
+          <h6 class="dispatch-date">6 April 18</h6>
+          <audio controls class="dispatch-audio">
+            <source src="https://storage.cloud.google.com/rensco-fire-wire/10080.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="dispatch bg-light">
+          <h4 class="dispatch-info">RPI Ambulance tones received at 10:32</h4>
+          <h6 class="dispatch-date">6 April 18</h6>
+          <audio controls class="dispatch-audio">
+            <source src="https://storage.cloud.google.com/rensco-fire-wire/10080.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
       </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 </body>
 </html>
