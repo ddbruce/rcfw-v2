@@ -33,7 +33,7 @@ DROP TABLE `departments`;
 
 CREATE TABLE `users`
 (
- `id`       INT NOT NULL ,
+ `id`       INT NOT NULL AUTO_INCREMENT ,
  `username` VARCHAR(150) NOT NULL ,
  `password` VARCHAR(150) NOT NULL ,
 
@@ -48,7 +48,7 @@ PRIMARY KEY (`id`)
 
 CREATE TABLE `emailContacts`
 (
- `id`    INT NOT NULL ,
+ `id`    INT NOT NULL AUTO_INCREMENT ,
  `email` VARCHAR(150) NOT NULL ,
 
 PRIMARY KEY (`id`)
@@ -62,7 +62,7 @@ PRIMARY KEY (`id`)
 
 CREATE TABLE `smsContacts`
 (
- `id`            INT NOT NULL ,
+ `id`            INT NOT NULL AUTO_INCREMENT ,
  `phone`         VARCHAR(15) NOT NULL ,
  `carrier`       VARCHAR(45) NOT NULL ,
  `carrierSuffix` VARCHAR(45) NOT NULL ,
@@ -78,9 +78,10 @@ PRIMARY KEY (`id`)
 
 CREATE TABLE `departments`
 (
- `id`         INT NOT NULL ,
+ `id`         INT NOT NULL AUTO_INCREMENT ,
  `name`       VARCHAR(45) NOT NULL ,
  `abbrev`     VARCHAR(5) NOT NULL ,
+ `shortname`  VARCHAR(45) ,
  `parentDept` INT ,
 
 PRIMARY KEY (`id`),
@@ -168,7 +169,7 @@ CONSTRAINT `FK_90` FOREIGN KEY `fkIdx_90` (`smsContactId`) REFERENCES `smsContac
 
 CREATE TABLE `dispatches`
 (
- `id`        INT NOT NULL ,
+ `id`        INT NOT NULL AUTO_INCREMENT ,
  `dept`      INT NOT NULL ,
  `time`      DATETIME NOT NULL ,
  `audioFile` VARCHAR(45) NOT NULL ,
@@ -178,3 +179,6 @@ PRIMARY KEY (`id`),
 KEY `fkIdx_38` (`dept`),
 CONSTRAINT `FK_38` FOREIGN KEY `fkIdx_38` (`dept`) REFERENCES `departments` (`id`)
 );
+
+
+
