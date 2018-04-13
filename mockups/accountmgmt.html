@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,800,800i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Rensco Fire Wire - front page</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rensco Fire Wire</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dispatches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Behind the Scenes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Archived Dispatches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get in Touch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 id="page-title">Account management</h1>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Email addresses on file</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>test@example.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>myemail@renscofirewire.com</td>
+            </tr>
+            <tr class="addnewtr">
+              <th scope="row"></th>
+              <td><a class="addnew" href="#"><i class="far fa-plus-square"></i> Add new...</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <h5>Phone numbers on file</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>(903) 555-1234</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>(508) 555-1212</td>
+            </tr>
+            <tr class="addnewtr">
+              <th scope="row"></th>
+              <td><a class="addnew" href="#"><i class="far fa-plus-square"></i> Add new...</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Subscriptions</h4>
+      </div>
+    </div>
+    <div class="row" id="usersubscriptions">
+      <div class="col-xl-4 col-lg-12">
+        <h6>test@example.com</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Station</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Troy Fire Department Station 2</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Troy Fire Department All-Call</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>South Schodack Fire Company</td>
+            </tr>
+            <tr class="addnewtr">
+              <th scope="row"></th>
+              <td><a class="addnew" href="#"><i class="far fa-plus-square"></i> Add new...</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xl-4 col-lg-12">
+        <h6>myemail@renscofirewire.com</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Station</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Troy Fire Department All-Call</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>South Schodack Fire Company</td>
+            </tr>
+            <tr class="addnewtr">
+              <th scope="row"></th>
+              <td><a class="addnew" href="#"><i class="far fa-plus-square"></i> Add new...</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xl-4 col-lg-12">
+        <h6>(903) 555-1234</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Station</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Rensselaer Fire Department EMS Alert</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Troy Fire Department All-Call</td>
+            </tr>
+            <tr class="addnewtr">
+              <th scope="row"></th>
+              <td><a class="addnew" href="#"><i class="far fa-plus-square"></i> Add new...</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-xl-4 col-lg-12">
+        <h6>(508) 555-1212</h6>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Station</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Melrose Fire Company</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Troy Fire Department All-Call</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>East Schodack Fire Company</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>South Schodack Fire Department</td>
+            </tr>
+            <tr class="addnewtr">
+              <th scope="row"></th>
+              <td><a class="addnew" href="#"><i class="far fa-plus-square"></i> Add new...</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/regular.js" integrity="sha384-JWLWlnwX0pRcCBsI3ZzOEyVDoUmngnFnbXR9VedCc3ko4R3xDG+KTMYmVciWbf4N" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/fontawesome.js" integrity="sha384-M2FSA4xMm1G9m4CNXM49UcDHeWcDZNucAlz1WVHxohug0Uw1K+IpUhp/Wjg0y6qG" crossorigin="anonymous"></script>
+</body>
+</html>

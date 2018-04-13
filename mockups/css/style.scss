@@ -1,4 +1,15 @@
+@mixin transition($duration) {
+  -webkit-transition: $duration;
+  -moz-transition: $duration;
+  -ms-transition: $duration;
+  -o-transition: $duration;
+  transition: $duration;
+}
+
+
+
 $rcfw-blue: #21437a;
+$rcfw-blue-bright: #2074fc;
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -43,6 +54,27 @@ li.divider {
   border-bottom: 1px solid #eee;
   width: 95%;
   margin: 0 auto;
+}
+
+
+#usersubscriptions h6 {
+  margin-top: 15px;
+}
+
+a.addnew {
+  color: $rcfw-blue-bright;
+  text-decoration: none;
+  @include transition(0.2s);
+
+  &:hover {
+    color: darken($rcfw-blue-bright, 20%);
+    text-decoration: none;
+    @include transition(0.2s);
+  }
+}
+
+.addnewtr {
+  background-color: rgba(0,0,0,0) !important;
 }
 
 
