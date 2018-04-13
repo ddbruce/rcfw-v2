@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   // styleUrls: ['../styles/app.component.css']
 })
 export class FeedComponent {
-  title = 'app';
+
+ public data = { "agency":"Troy Fire Station 2", "time":"12:02", "date":"December 04, 2017" };
+
 }
