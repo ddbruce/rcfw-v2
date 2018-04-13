@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './components/app.component';
 import { FeedComponent } from './components/feed.component';
+import { BehindComponent } from './components/behind.component';
+import { ArchiveComponent } from './components/archive.component';
+import { ContactComponent } from './components/contact.component';
+
 import { AppRoutingModule }     from './modules/app-routing.module';
 import { NavComponent } from './components/nav.component'
 
@@ -12,7 +16,10 @@ import { NavComponent } from './components/nav.component'
   declarations: [
     AppComponent,
     FeedComponent,
-    NavComponent
+    NavComponent,
+    ContactComponent,
+    ArchiveComponent,
+    BehindComponent
   ],
   imports: [
     BrowserModule,

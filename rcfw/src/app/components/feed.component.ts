@@ -3,7 +3,7 @@ import { Title }     from '@angular/platform-browser';
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'feed',
   templateUrl: '../templates/feed.template.html'
   // styleUrls: ['../styles/app.component.css']
 })
