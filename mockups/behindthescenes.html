@@ -44,12 +44,12 @@
         <h1 id="page-title">Behind the scenes</h1>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-10">
+    <div class="row">
+      <div class="col-md-12">
         <p>
           Rensco Fire Wire is run with consumer, off-the-shelf hardware. The signal chain, from start to end, is:
           <ul>
-            <li>A Realistic Pro-2006 scanner. This puppy was bought new around 1990 and sat in my father’s office since then. It can scan several frequency ranges from 25 MHz to 1300 MHz—perfect for Rensselaer County.</li>
+            <li>A Realistic Pro-2006 scanner. This puppy was bought new around 1990 and sat in my father’s office since then. It can scan several frequency ranges from 25 MHz to 1300 MHz— which, prior to the new dispatch system, was perfect for Rensselaer County.</li>
             <li>A Behinger UCA202 audio interface. This is a very basic stereo in/stereo out USB interface. Behringer, admittedly, is not the highest quality brand, but it absolutely gets the job done for radio traffic.</li>
             <li>A Raspberry Pi 2 Model B running TwoToneDetect on Raspbian Jessie. The software, I believe, was originally written in Python for Windows and then ported over to Linux. There are a couple of quirks, and several things could’ve been easier to set up if TTD was open-source. That said, some interesting workarounds allowed everything to come together properly.</li>
             <li>Several custom scripts. These deal with the conversion, management, and uploading of the recorded audio files (and the agency data associated with them) to my web server. A variety of software packages compresses the dynamic range of the audio and equalizes it—both in an effort to make clearer audio and smaller file sizes—before sending the file to the web.</li>
@@ -59,6 +59,18 @@
       </div>
     </div>
   </div>
+  <footer>
+    <div class="container text-muted">
+      <div class="row">
+        <div class="col-md-6">
+          Built in upstate New York. Hosted in NYC.
+        </div>
+        <div class="col-md-6 align-right">
+          Copyright &copy; 2018. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

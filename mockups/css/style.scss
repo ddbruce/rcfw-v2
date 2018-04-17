@@ -90,6 +90,23 @@ a.addnew {
   background-color: rgba(0,0,0,0) !important;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: darken($rcfw-blue, 10%);
+  color: white;
+
+  div.row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+}
+
+.align-right {
+  text-align: right;
+}
 
 // make boot-strap select work **********
 
