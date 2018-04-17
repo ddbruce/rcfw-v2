@@ -12,7 +12,12 @@ $rcfw-blue: #21437a;
 $rcfw-blue-bright: #2074fc;
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  letter-spacing: 0.6px;
 }
 
 body, html {
@@ -23,7 +28,7 @@ body, html {
   background-color: $rcfw-blue;
 
   .navbar-brand {
-    font-weight: 800;
+    font-weight: 900;
   }
 
   .nav-link {
@@ -69,6 +74,14 @@ a.addnew {
   &:hover {
     color: darken($rcfw-blue-bright, 20%);
     text-decoration: none;
+    @include transition(0.2s);
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  @include transition(0.2s);
+
+  &:hover {
     @include transition(0.2s);
   }
 }
