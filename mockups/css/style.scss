@@ -91,7 +91,7 @@ a.addnew {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: darken($rcfw-blue, 10%);
