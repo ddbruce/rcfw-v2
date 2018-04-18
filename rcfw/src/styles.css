@@ -11,19 +11,6 @@ body, html {
   height: 100%;
 }
 
-.navbar {
-  background-color: #21437a;
-}
-
-.navbar .navbar-brand {
-  font-weight: 900;
-}
-
-.navbar .nav-link {
-  padding-left: .75rem !important;
-  padding-right: .75rem !important;
-}
-
 #page-title {
   margin-top: 25px;
 }
@@ -65,22 +52,6 @@ a.addnew {
 a.addnew:hover {
   color: #0246b4;
   text-decoration: none;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
