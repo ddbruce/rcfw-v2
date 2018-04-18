@@ -12,7 +12,12 @@ $rcfw-blue: #21437a;
 $rcfw-blue-bright: #2074fc;
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  letter-spacing: 0.6px;
 }
 
 body, html {
@@ -23,7 +28,7 @@ body, html {
   background-color: $rcfw-blue;
 
   .navbar-brand {
-    font-weight: 800;
+    font-weight: 900;
   }
 
   .nav-link {
@@ -73,10 +78,35 @@ a.addnew {
   }
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  @include transition(0.2s);
+
+  &:hover {
+    @include transition(0.2s);
+  }
+}
+
 .addnewtr {
   background-color: rgba(0,0,0,0) !important;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: darken($rcfw-blue, 10%);
+  color: white;
+
+  div.row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+}
+
+.align-right {
+  text-align: right;
+}
 
 // make boot-strap select work **********
 

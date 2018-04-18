@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Behind the Scenes | Rensco Fire Wire</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rensco Fire Wire</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="front.html">Dispatches<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="behindthescenes.html">Behind the Scenes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Archived Dispatches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get in Touch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accountmgmt.html">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 id="page-title">Behind the scenes</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          Rensco Fire Wire is run with consumer, off-the-shelf hardware. The signal chain, from start to end, is:
+          <ul>
+            <li>A Realistic Pro-2006 scanner. This puppy was bought new around 1990 and sat in my father’s office since then. It can scan several frequency ranges from 25 MHz to 1300 MHz— which, prior to the new dispatch system, was perfect for Rensselaer County.</li>
+            <li>A Behinger UCA202 audio interface. This is a very basic stereo in/stereo out USB interface. Behringer, admittedly, is not the highest quality brand, but it absolutely gets the job done for radio traffic.</li>
+            <li>A Raspberry Pi 2 Model B running TwoToneDetect on Raspbian Jessie. The software, I believe, was originally written in Python for Windows and then ported over to Linux. There are a couple of quirks, and several things could’ve been easier to set up if TTD was open-source. That said, some interesting workarounds allowed everything to come together properly.</li>
+            <li>Several custom scripts. These deal with the conversion, management, and uploading of the recorded audio files (and the agency data associated with them) to my web server. A variety of software packages compresses the dynamic range of the audio and equalizes it—both in an effort to make clearer audio and smaller file sizes—before sending the file to the web.</li>
+            <li>A VPS hosted by a very good company. The VPS is running Debian Stretch and hosts Rensco Fire Wire as a custom-built site. The site was built using Angular 4, Node.js, and MariaDB.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container text-muted">
+      <div class="row">
+        <div class="col-md-6">
+          Built in upstate New York. Hosted in NYC.
+        </div>
+        <div class="col-md-6 align-right">
+          Copyright &copy; 2018. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+</body>
+</html>
