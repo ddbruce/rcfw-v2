@@ -4,7 +4,7 @@ import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'feed',
-  templateUrl: '../templates/feed.template.html'
+  templateUrl: '../templates/feed.template.html',
   styleUrls: ['../styles/feed.style.scss','../styles/bootstrapselect.scss']
 })
 export class FeedComponent {
