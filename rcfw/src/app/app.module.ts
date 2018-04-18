@@ -11,6 +11,8 @@ import { NotFoundComponent } from './components/404.component'
 
 import { AppRoutingModule }     from './modules/app-routing.module';
 import { NavComponent } from './components/nav.component'
+import { FooterComponent } from './components/footer.component'
+
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { NavComponent } from './components/nav.component'
     ContactComponent,
     ArchiveComponent,
     BehindComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

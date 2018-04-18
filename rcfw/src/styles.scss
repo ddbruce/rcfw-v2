@@ -1,3 +1,5 @@
+@import 'app/styles/_include.scss';
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -65,30 +67,8 @@ a.addnew {
   }
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  @include transition(0.2s);
-
-  &:hover {
-    @include transition(0.2s);
-  }
-}
-
 .addnewtr {
   background-color: rgba(0,0,0,0) !important;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: darken($rcfw-blue, 10%);
-  color: white;
-
-  div.row {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-  }
 }
 
 .align-right {

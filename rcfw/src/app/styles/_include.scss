@@ -1,0 +1,12 @@
+@mixin transition($duration) {
+  -webkit-transition: $duration;
+  -moz-transition: $duration;
+  -ms-transition: $duration;
+  -o-transition: $duration;
+  transition: $duration;
+}
+
+
+
+$rcfw-blue: #21437a;
+$rcfw-blue-bright: #2074fc;
