@@ -17,98 +17,14 @@ body, html {
   margin-top: 25px;
 }
 
-.dispatch {
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-
-  .dispatch-date {
-    font-weight: 300;
-  }
-}
-
-#searchdiv {
-  padding: 15px;
-}
-
-li.divider {
-  border-bottom: 1px solid #eee;
-  width: 95%;
-  margin: 0 auto;
-}
-
-
-#usersubscriptions h6 {
-  margin-top: 15px;
-}
-
-a.addnew {
-  color: $rcfw-blue-bright;
-  text-decoration: none;
-  @include transition(0.2s);
-
-  &:hover {
-    color: darken($rcfw-blue-bright, 20%);
-    text-decoration: none;
-    @include transition(0.2s);
-  }
-}
-
-.addnewtr {
-  background-color: rgba(0,0,0,0) !important;
-}
-
 .align-right {
   text-align: right;
 }
 
-// make boot-strap select work **********
-
-.dropdown-toggle.btn-default {
-  color: #292b2c;
-  background-color: #fff;
-  border-color: #ccc;
-}
-.bootstrap-select.show > .dropdown-menu > .dropdown-menu,
-.bootstrap-select > .dropdown-menu > .dropdown-menu li.hidden {
-  display: block;
-}
-.bootstrap-select > .dropdown-menu > .dropdown-menu li a {
-  display: block;
+footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding: 3px 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #292b2c;
-  text-align: inherit;
-  white-space: nowrap;
-  background: 0 0;
-  border: 0;
-  text-decoration: none;
-}
-.bootstrap-select > .dropdown-menu > .dropdown-menu li a:hover {
-  background-color: #f4f4f4;
-}
-.bootstrap-select > .dropdown-toggle {
-  width: auto;
-}
-.dropdown-menu > li.active > a {
-  color: #fff !important;
-  background-color: #337ab7 !important;
-}
-.bootstrap-select .check-mark {
-  line-height: 14px;
-}
-.bootstrap-select .check-mark::after {
-  font-family: "FontAwesome";
-  content: "\f00c";
-}
-.bootstrap-select button {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Make filled out selects be the same size as empty selects */
-.bootstrap-select.btn-group .dropdown-toggle .filter-option {
-  display: inline !important;
+  background-color: darken($rcfw-blue, 10%);
+  color: white;
 }

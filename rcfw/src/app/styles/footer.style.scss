@@ -1,12 +1,6 @@
 @import './_include.scss';
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: darken($rcfw-blue, 10%);
-  color: white;
-
+.footer {
   div.row {
     padding-top: 15px;
     padding-bottom: 15px;

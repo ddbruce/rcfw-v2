@@ -1,0 +1,19 @@
+#usersubscriptions h6 {
+  margin-top: 15px;
+}
+
+a.addnew {
+  color: $rcfw-blue-bright;
+  text-decoration: none;
+  @include transition(0.2s);
+
+  &:hover {
+    color: darken($rcfw-blue-bright, 20%);
+    text-decoration: none;
+    @include transition(0.2s);
+  }
+}
+
+.addnewtr {
+  background-color: rgba(0,0,0,0) !important;
+}

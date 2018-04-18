@@ -5,7 +5,7 @@ import { Title }     from '@angular/platform-browser';
 @Component({
   selector: 'my-account',
   templateUrl: '../templates/account.template.html',
-  // styleUrls: ['../styles/app.component.css']
+  styleUrls: ['../styles/account.style.css']
 })
 export class MyAccountComponent {
 

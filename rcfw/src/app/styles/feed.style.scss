@@ -1,0 +1,19 @@
+.dispatch {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  .dispatch-date {
+    font-weight: 300;
+  }
+}
+
+#searchdiv {
+  padding: 15px;
+}
+
+li.divider {
+  border-bottom: 1px solid #eee;
+  width: 95%;
+  margin: 0 auto;
+}

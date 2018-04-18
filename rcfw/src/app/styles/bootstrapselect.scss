@@ -1,91 +1,14 @@
-* {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-weight: 900;
-  letter-spacing: 0.6px;
-}
-
-body, html {
-  height: 100%;
-}
-
-#page-title {
-  margin-top: 25px;
-}
-
-.dispatch {
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.dispatch .dispatch-date {
-  font-weight: 300;
-}
-
-#searchdiv {
-  padding: 15px;
-}
-
-li.divider {
-  border-bottom: 1px solid #eee;
-  width: 95%;
-  margin: 0 auto;
-}
-
-#usersubscriptions h6 {
-  margin-top: 15px;
-}
-
-a.addnew {
-  color: #2074fc;
-  text-decoration: none;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-a.addnew:hover {
-  color: #0246b4;
-  text-decoration: none;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.addnewtr {
-  background-color: transparent !important;
-}
-
-.align-right {
-  text-align: right;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #162d52;
-  color: white;
-}
+// make boot-strap select work **********
 
 .dropdown-toggle.btn-default {
   color: #292b2c;
   background-color: #fff;
   border-color: #ccc;
 }
-
 .bootstrap-select.show > .dropdown-menu > .dropdown-menu,
 .bootstrap-select > .dropdown-menu > .dropdown-menu li.hidden {
   display: block;
 }
-
 .bootstrap-select > .dropdown-menu > .dropdown-menu li a {
   display: block;
   width: 100%;
@@ -99,29 +22,23 @@ footer {
   border: 0;
   text-decoration: none;
 }
-
 .bootstrap-select > .dropdown-menu > .dropdown-menu li a:hover {
   background-color: #f4f4f4;
 }
-
 .bootstrap-select > .dropdown-toggle {
   width: auto;
 }
-
 .dropdown-menu > li.active > a {
   color: #fff !important;
   background-color: #337ab7 !important;
 }
-
 .bootstrap-select .check-mark {
   line-height: 14px;
 }
-
 .bootstrap-select .check-mark::after {
   font-family: "FontAwesome";
   content: "\f00c";
 }
-
 .bootstrap-select button {
   overflow: hidden;
   text-overflow: ellipsis;
