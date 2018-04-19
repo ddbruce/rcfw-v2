@@ -1,5 +1,7 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgxSelectModule } from 'ngx-select-ex';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './components/app.component';
@@ -28,7 +30,8 @@ import { FooterComponent } from './components/footer.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxSelectModule,
   ],
   providers: [Title],
   bootstrap: [AppComponent]
