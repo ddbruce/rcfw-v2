@@ -2,7 +2,7 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxSelectModule } from 'ngx-select-ex';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule }    from '@angular/common/http';
 
 import { AppComponent } from './components/app.component';
 import { FeedComponent } from './components/feed.component';
@@ -32,6 +32,7 @@ import { FooterComponent } from './components/footer.component'
     BrowserModule,
     AppRoutingModule,
     NgxSelectModule,
+    HttpClientModule
   ],
   providers: [Title],
   bootstrap: [AppComponent]
